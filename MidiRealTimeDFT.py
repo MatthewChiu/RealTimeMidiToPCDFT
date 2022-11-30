@@ -105,31 +105,12 @@ def averageDFTs(scoreToDataResults):
     return averageDFT
 # —————————————————————————————————————————————————
 # Demonstration
-testy = [[66, 1669689390], [67, 1669689397], [67, 1669689397], [67, 1669689397], [68, 1669689398], [68, 1669689398], [68, 1669689398], [68, 1669689398], [69, 1669689399], [70, 1669689400], [70, 1669689400], [70, 1669689400], [71, 1669689401], [71, 1669689401], [71, 1669689401], [71, 1669689401], [71, 1669689401], [72, 1669689402], [72, 1669689402], [72, 1669689402], [72, 1669689402], [73, 1669689403], [73, 1669689403]]
-blahBlah = windower(testy, 5)
-print(blahBlah)
+# testy = [[66, 1669689390], [67, 1669689397], [67, 1669689397], [67, 1669689397], [68, 1669689398], [68, 1669689398], [68, 1669689398], [68, 1669689398], [69, 1669689399], [70, 1669689400], [70, 1669689400], [70, 1669689400], [71, 1669689401], [71, 1669689401], [71, 1669689401], [71, 1669689401], [71, 1669689401], [72, 1669689402], [72, 1669689402], [72, 1669689402], [72, 1669689402], [73, 1669689403], [73, 1669689403]]
+# blahBlah = windower(testy, 5)
+# print(blahBlah)
 
-thing = logDFT(blahBlah)
-print(thing[8])
-
-
-# ———————————————————
-# Practice plotting
-
-#%%
-import matplotlib.pyplot as plt
-fig = plt.figure()
-
-ax = fig.add_subplot(111)
-
-plt.xlabel("Time")
-plt.ylabel("Magnitude")
-
-line1, = ax.plot(thing[8])
-fig.canvas.draw()
-
-fig.canvas.flush_events()
-
+# thing = logDFT(blahBlah)
+# print(thing[8])
 
 # —————————————————————————————————————————————————
 
@@ -140,7 +121,7 @@ fig.canvas.flush_events()
 
 import matplotlib as mpl
 mpl.rcParams['path.simplify'] = True
-mpl.rcParams['path.simplify_threshold'] = 3.0
+mpl.rcParams['path.simplify_threshold'] = 1.0
 
 # Real time code
 PCArray = []
